@@ -58,7 +58,7 @@
 
 1. `git clone https://github.com/0227vera/salvatore-vue`
 
-2. `cd h5-mutil-document`
+2. `cd salvatore-vue`
 
 3. `npm i`
 
