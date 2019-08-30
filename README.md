@@ -56,7 +56,7 @@
 
 ## 加入项目
 
-1. `git clone https://git.iflytek.com/LZX_OfficialDocument/h5-mutil-document.git`
+1. `git clone https://github.com/0227vera/salvatore-vue`
 
 2. `cd h5-mutil-document`
 
