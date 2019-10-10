@@ -1,7 +1,6 @@
 const path = require('path')
 const config = require('./package.json')
 const autoprefixer = require('autoprefixer')
-const pxtoviewport = require('postcss-px-to-viewport')
 
 module.exports = {
   publicPath: './',
@@ -34,12 +33,7 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          autoprefixer(),
-          pxtoviewport({
-            // 这个地方是设计给的屏幕宽度，只需要配置这个地方，之后vant会自动将你写的和你量的px转成rem，就解决了移动端的自适应的问题
-            viewportWidth: 375,
-            selectorBlackList: ['van-circle__layer']
-          })
+          autoprefixer()
         ]
       }
     }
@@ -50,7 +44,7 @@ module.exports = {
     https: false,
     hotOnly: false,
     proxy: require('./proxy')
-  }
+  },
   // 这个地方是使用echarts的webpack配置，如果没有使用echarts的话，可以不要这个
-  // transpileDependencies: [ 'vue-echarts', 'resize-detector' ]
+  transpileDependencies: [ 'vue-echarts', 'resize-detector' ]
 }
