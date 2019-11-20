@@ -1,5 +1,5 @@
 import qs from 'qs'
-const axios = window.axios
+import axios from 'axios'
 // axios.defaults.baseURL = window.CONTEXT
 
 let reg = /^[\u0391-\uFFE5%]+$/
