@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>salvatore-vue</title>
   </head>
@@ -13,5 +13,12 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <!-- 批注功能 -->
+    <script src="./static/js/fabric.js"></script>
+    <script>
+      // fabric不适用高清屏，如果是retina，会因为canvas太大而直接影响是否渲染
+      fabric.devicePixelRatio = 1
+    </script>
+    <script src="https://h5.lezhiyun.com/vue-vendor/alloy_lever.min.js"></script>
   </body>
 </html>

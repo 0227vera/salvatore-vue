@@ -22,6 +22,11 @@ export default new Router({
       path: '/three',
       name: 'three',
       component: () => import('@/views/threeJS')
+    },
+    {
+      path: '/annotation',
+      name: 'Annotation',
+      component: () => import('@/views/Annotation')
     }
   ]
 })
