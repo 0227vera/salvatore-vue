@@ -16,14 +16,6 @@ module.exports = {
       .tap(options => Object.assign(options, {
         limit: 10000
       }))
-    // 复制varsion文件夹下面所有的文件和文档
-    config.plugin('version')
-      .use(require.resolve('copy-webpack-plugin'), [
-        [{
-          from: './version',
-          to: '../'
-        }]
-      ])
     // 移除 prefetch 插件
     config.plugins.delete('prefetch')
     // 移除 preload 插件，这两个可以适当的加快首次加载
