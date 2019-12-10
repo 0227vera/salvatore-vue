@@ -30,7 +30,7 @@
           <img :src="toolColor">
         </div>
         <div @click="toggleText">
-          <span :class="`color${isCanUseText ? active : -1}`">A</span>
+          <span :class="`color${ isCanUseText ? active : -1 }`">A</span>
         </div>
       </div>
       <div class="index-footer-color">
@@ -38,13 +38,13 @@
           <div class="index-footer-color-item"
             v-for="(item,index) in color" :key="item.id"
             :style="{
-              borderColor:item.color,
-              background: index===active ? item.color : 'none'
+              borderColor: item.color,
+              background: index === active ? item.color : 'none'
             }"
-            :class="{active:index===active}"
+            :class="{active:index === active}"
             @click="changeColor(item, index)"
           >
-            <span :style="{background:item.color}"></span>
+            <span :style="{ background: item.color }"></span>
           </div>
          </div>
       </div>
@@ -151,7 +151,7 @@ export default {
     let info = document.querySelector('.index-main').getBoundingClientRect()
     this.bH = info.height
     this.bW = info.width
-    this.scale.x = this.bW / 997
+    this.scale.x = this.b W / 997
     this.scale.y = this.bH / 1202
     this.lockScale.x.min = this.bW / 997
     this.lockScale.y.min = this.bH / 1202
