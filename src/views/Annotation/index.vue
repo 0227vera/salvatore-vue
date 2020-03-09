@@ -66,7 +66,8 @@ export default {
   name: 'index',
   data () {
     return {
-      mainSrc: require('@/assets/img/pizhu.png'),
+      // mainSrc: require('@/assets/img/pizhu.png'),
+      mainSrc: '',
       scale: {
         x: 1,
         y: 1
@@ -151,7 +152,7 @@ export default {
     let info = document.querySelector('.index-main').getBoundingClientRect()
     this.bH = info.height
     this.bW = info.width
-    this.scale.x = this.b W / 997
+    this.scale.x = this.bW / 997
     this.scale.y = this.bH / 1202
     this.lockScale.x.min = this.bW / 997
     this.lockScale.y.min = this.bH / 1202
