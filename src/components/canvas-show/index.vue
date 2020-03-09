@@ -100,9 +100,10 @@ export default {
         if (target.path) {
           if (target.path.length < 5) {
             this.goBackStep()
+            return
           }
         }
-        this.moveTo()
+        this.$emit('update:canBack', true)
       })
       this.canvas.on('mouse:up', options => {
         if (!options.target) {
@@ -127,21 +128,6 @@ export default {
       this.canvas.on('mouse:down', e => {
         this.pointer = e.pointer
       })
-    },
-    // 将文字移到最上面的图层
-    moveTo () {
-      let data = this.canvas.getObjects()
-      let length = data.length
-      if (length) {
-        this.$emit('update:canBack', true)
-      }
-      data.forEach(item => {
-        if (!item.path) {
-          this.canvas.moveTo(item, length)
-          length--
-        }
-      })
-      this.canvas.renderAll()
     },
     // 求两点之间的距离
     getDistance (point1, point2) {

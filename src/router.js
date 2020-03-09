@@ -14,11 +14,6 @@ export default new Router({
       component: Home
     },
     {
-      path: '/home',
-      name: 'home',
-      component: Home
-    },
-    {
       path: '/three',
       name: 'three',
       component: () => import('@/views/threeJS')
