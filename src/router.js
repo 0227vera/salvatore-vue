@@ -27,6 +27,11 @@ export default new Router({
       path: '/annotation',
       name: 'Annotation',
       component: () => import('@/views/Annotation')
+    },
+    {
+      path: '/props',
+      name: 'props',
+      component: () => import('@/views/props/father')
     }
   ]
 })
