@@ -4,10 +4,10 @@ module.exports = {
   ],
   plugins: [
     // 按需引入vant的样式
-    [
-      'import',
-      { libraryName: 'vant', libraryDirectory: 'es', style: true },
-      'vant'
-    ]
+    // [
+    //   'import',
+    //   { libraryName: 'vant', libraryDirectory: 'es', style: true },
+    //   'vant'
+    // ]
   ]
 }

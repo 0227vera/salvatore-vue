@@ -27,6 +27,11 @@ export default new Router({
       path: '/props',
       name: 'props',
       component: () => import('@/views/props/father')
+    },
+    {
+      path: '/slot',
+      name: 'slot',
+      component: () => import('@/views/slot')
     }
   ]
 })

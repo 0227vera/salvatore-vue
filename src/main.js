@@ -4,6 +4,8 @@ import router from './router'
 import store from './store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import Vant from 'vant'
+import 'vant/lib/index.css'
 
 import ECharts from 'vue-echarts'
 import 'echarts/lib/chart/pie'
@@ -12,10 +14,12 @@ import 'echarts/lib/component/tooltip'
 import 'echarts/lib/component/legend'
 import 'echarts/lib/component/graphic'
 import 'echarts/lib/chart/bar'
+console.log(Vant)
 
 Vue.component('v-chart', ECharts)
 
 Vue.use(ElementUI)
+Vue.use(Vant)
 
 Vue.config.productionTip = false
 
