@@ -32,6 +32,11 @@ export default new Router({
       path: '/slot',
       name: 'slot',
       component: () => import('@/views/slot')
+    },
+    {
+      path: '/filter',
+      name: 'filter',
+      component: () => import('@/views/filter')
     }
   ]
 })
