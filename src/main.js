@@ -14,7 +14,7 @@ import 'echarts/lib/component/tooltip'
 import 'echarts/lib/component/legend'
 import 'echarts/lib/component/graphic'
 import 'echarts/lib/chart/bar'
-console.log(Vant)
+console.log(Vue.config)
 
 Vue.component('v-chart', ECharts)
 
