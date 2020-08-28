@@ -69,7 +69,7 @@ export default {
   name: "index",
   data() {
     return {
-      mainSrc: require("@/assets/img/pizhu.jpg"),
+      mainSrc: require("@/assets/img/pizhu.jpeg"),
       scale: {
         x: 1,
         y: 1
